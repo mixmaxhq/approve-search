@@ -1,0 +1,46 @@
+{
+  "name": "@mixmaxhq/approve-github-search",
+  "version": "1.0.0",
+  "description": "Approve all PRs identified by a GitHub search.",
+  "main": "index.js",
+  "files": [
+    "bin",
+    "dist"
+  ],
+  "bin": "./bin/index.js",
+  "scripts": {
+    "build": "babel src -d dist",
+    "ci": "npm run lint",
+    "lint": "eslint .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/mixmaxhq/approve-github-search.git"
+  },
+  "author": "Eli Skeggs <eli@mixmax.com> (https://mixmax.com)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mixmaxhq/approve-github-search/issues"
+  },
+  "homepage": "https://github.com/mixmaxhq/approve-github-search#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.7.0",
+    "@babel/core": "^7.7.2",
+    "@babel/plugin-transform-modules-commonjs": "^7.7.0",
+    "@babel/plugin-transform-runtime": "^7.6.2",
+    "@mixmaxhq/prettier-config": "^1.0.0",
+    "eslint": "^6.6.0",
+    "eslint-config-mixmax": "^3.4.0",
+    "prettier": "^1.19.1"
+  },
+  "dependencies": {
+    "@babel/runtime": "^7.7.2",
+    "@mixmaxhq/promise-pool": "^2.0.0",
+    "@octokit/rest": "^16.35.0",
+    "debug": "^4.1.1",
+    "promise-callbacks": "^3.3.0",
+    "prompts": "^2.3.0",
+    "yargs": "^14.2.0"
+  }
+}
